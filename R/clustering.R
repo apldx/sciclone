@@ -926,7 +926,7 @@ bmm.filter.clusters <- function(vafs.merged, X, N.c, r, mu, alpha, nu, beta, c, 
 
         if((apply.min.items.condition == TRUE) & (N.c > 1)) {
             threshold.pts <- max(3, ceiling(.005*N))
-            threshold.pts <- 3
+            threshold.pts <- 2
             
             num.items.per.cluster <- rep(0, N.c)
             for(n in 1:N) {
