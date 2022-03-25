@@ -1748,6 +1748,7 @@ gaussian.bmm.filter.clusters <- function(vafs.merged, vafs, successes, total.tri
 
     if((apply.min.items.condition == TRUE) & (N.c > 1)) {
       threshold.pts <- max(3, ceiling(.005*N))
+      threshold.pts <- 3
 
       num.items.per.cluster <- rep(0, N.c)
       for(n in 1:N) {
